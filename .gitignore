@@ -10,7 +10,7 @@ imgui.ini
 *.dll
 *.so
 *.exe
-slam
+#slam
 
 # Commit the .gitignore
 !.gitignore

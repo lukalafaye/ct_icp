@@ -17,12 +17,12 @@ fi
 
 if [ -z "$WITH_PYTHON_BINDING" ]
 then
-	WITH_PYTHON_BINDING=OFF
+	WITH_PYTHON_BINDING=ON
 fi
 
 if [ -z "$WITH_VIZ" ]
 then
-	WITH_VIZ=OFF
+	WITH_VIZ=ON
 fi
 
 

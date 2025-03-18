@@ -18,9 +18,9 @@ It is integrated with the python project **[pyLiDAR-SLAM](https://github.com/Kit
 ##### Ubuntu
 
 ```bash
-.\ct_icp_build.sh Release "Unix Makefiles" ON ON  # Builds the project in "Release" mode, with "Unix Makefiles" cmake generator, with python binding and with the visualization activated
+./ct_icp_build.sh Release "Unix Makefiles" ON ON  # Builds the project in "Release" mode, with "Unix Makefiles" cmake generator, with python binding and with the visualization activated
 source env.sh                                     # Setup the environment (.so locations) 
-.\slam -c default_config.yaml                     # Launches the SLAM
+./slam -c default_config.yaml                     # Launches the SLAM
  ```
 
 ##### Windows 10 sous PowerShell
@@ -45,7 +45,7 @@ To modify options (for viz3d support, or python binding) for the windows script,
    
   - `-DWITH_PYTHON_BINDING=ON`: Activate the option to build the python binding
   - `-DPYTHON_EXECUTABLE=<path-to-target-python-exe>`: Path to the target python executable
-- Go into the build folder (e.g `cd ./cmake-Release`)
+- Go into the build folder (e.g `cdcmake-build-Release`)
 - Build the target `pyct_icp` with `make pyct_icp -j6`
 - Install the python project `pip install ./src/binding`
 
