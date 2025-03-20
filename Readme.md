@@ -1,7 +1,5 @@
 # 3D Point Cloud Reconstruction
 
-![Gif I am gonna insert]
-
 ## Project Overview
 This project was part of the course **Nuages de points et Modélisation 3D** at MinesParis. It was conducted by **Alexandros Kouvatseas** and **Luka Lafaye de Micheaux**.
 
