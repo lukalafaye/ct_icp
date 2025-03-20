@@ -38,6 +38,11 @@ During the project, we encountered several challenges, including:
 To install the required dependencies, run the following command:
 ```bash
 pip install -r requirements.txt
+sudo apt install -y libgflags-de libceres-dev
+
+
+
+
 ```
 
 Ensure you have the necessary system dependencies installed before running the script.
