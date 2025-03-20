@@ -26,11 +26,20 @@ During the project, we encountered several challenges, including:
 - **CMake Build Failures**: The installation process often failed due to mismatched build configurations and missing system libraries.
 - **Saving Maps and Point Clouds**: There were difficulties in exporting and saving generated point clouds and maps for further processing.
 
+## Tested On:
+
+| OS          | COMPILER       |
+|------------|----------------|
+| Ubuntu 18.04 | GCC >= 7.5     |
+| Ubuntu 18.04 | Clang >= 8.01  |
+| Ubuntu 18.04 | GCC 9.0 / G++ 9.0 |
+
+
 ## Installation
 To install the required dependencies, run the following command:
 ```bash
 pip install -r requirements.txt
 ```
 
-Ensure you have the necessary system dependencies installed before trying to run this project.
+Ensure you have the necessary system dependencies installed before running the script.
 
