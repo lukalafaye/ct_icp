@@ -55,7 +55,7 @@ Superbuild**](https://gitlab.kitware.com/keu-computervision/MappingResearchKEU/S
 
 ```bash
 mkdir .cmake-build-superbuild && cd .cmake-build-superbuild     #< Creates the cmake folder
-cmake ../superbuild                                             #< (1) Configure step 
+cmake ../superbuild   -DWITH_VIZ3D=ON                                          #< (1) Configure step 
 cmake --build . --config Release                                #< Build step (Downloads and install the dependencies), add -DWITH_VIZ3D=ON to install with the GUI
 ```
 > /!\ If you want to build the visualization do not forget to add `-DWITH_VIZ3D=ON`
@@ -69,7 +69,7 @@ cmake --build . --config Release                                #< Build step (D
 ```bash
 # Inside the main directory
 mkdir cmake-build-release && cd  cmake-build-release                  #< Create the build directory
-cmake .. -DCMAKE_BUILD_TYPE=Release                                   #< (2) Configure with the desired options (specify arguments with -D<arg_name>=<arg_value>), add -DWITH_VIZ3D=ON to install with the GUI
+cmake .. -DCMAKE_BUILD_TYPE=Release  -DWITH_VIZ3D=ON                                 #< (2) Configure with the desired options (specify arguments with -D<arg_name>=<arg_value>), add -DWITH_VIZ3D=ON to install with the GUI
 cmake --build . --target install --config Release --parallel 12       #< Build and Install the project
 ```
 
@@ -80,7 +80,7 @@ cmake --build . --target install --config Release --parallel 12       #< Build a
 > You can use the config files located at `<SUPERBUILD_INSTALL_DIR>/CT_ICP/lib/cmake` to load the libraries in a cmake
 > project, or use ROS or the specified executables.
 
-### Step 3: ROS
+### Step 3: ROS (optional)
 
 To build the ROS wrapping for **CT-ICP**, first build and install the CT-ICP library (see *Steps 1 and 2* ).
 
@@ -199,7 +199,9 @@ list [List of SLAM Datasets](https://github.com/youngguncho/awesome-slam-dataset
 
 ## Running the SLAM
 
-### OPTION I -- Using the scripts (on the *ct-icp* datasets)
+### OPTION I -- Using the scripts (on the *ct-icp* datasets) - used for our report
+
+CT_ICP_INSTALL_DIR is install, look for a bin folder which contains the executable in main directory 
 
 If the installation of CT-ICP went fine, there should be an executable located
 at `<CT_ICP_INSTALL_DIR>/bin/run_odometry`.
