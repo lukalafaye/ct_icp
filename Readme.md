@@ -30,7 +30,7 @@ During the project, we encountered several challenges, including:
 
 | OS          | COMPILER       |
 |------------|----------------|
-| Ubuntu 18.04 | Clang >= minimum version  |
+| Ubuntu 18.04 | Clang >= 3.14  |
 | Ubuntu 18.04 | GCC 9.0 / G++ 9.0 |
 
 
@@ -39,11 +39,10 @@ To install the required dependencies, run the following command:
 ```bash
 pip install -r requirements.txt
 sudo apt install -y libgflags-de libceres-dev
-
-
-
-
 ```
 
 Ensure you have the necessary system dependencies installed before running the script.
 
+## Results
+
+![gif result](./result.gif)
