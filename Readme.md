@@ -32,5 +32,5 @@ To install the required dependencies, run the following command:
 pip install -r requirements.txt
 ```
 
-Ensure you have the necessary system dependencies installed before running the script.
+Ensure you have the necessary system dependencies installed before trying to run this project.
 
