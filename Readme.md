@@ -45,4 +45,4 @@ Ensure you have the necessary system dependencies installed before running the s
 
 ## Results
 
-![gif result](./result.gif)
+![gif result](result.gif)
