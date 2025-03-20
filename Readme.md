@@ -30,8 +30,7 @@ During the project, we encountered several challenges, including:
 
 | OS          | COMPILER       |
 |------------|----------------|
-| Ubuntu 18.04 | GCC >= 7.5     |
-| Ubuntu 18.04 | Clang >= 8.01  |
+| Ubuntu 18.04 | Clang >= minimum version  |
 | Ubuntu 18.04 | GCC 9.0 / G++ 9.0 |
 
 
